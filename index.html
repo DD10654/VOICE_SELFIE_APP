@@ -1,0 +1,71 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<link href="style.css" rel="stylesheet">
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="" id="link" download="mySelfie.png"></a>
+                <h1>Voice Selfie App 
+                    <img id="logo_img" src="selfie.jpeg">
+                    
+        
+                </h1>
+            </div>
+            <div class="card-body">
+                <h4 class="text-danger">Please press allow as soon as popup comes. After that you give a voice command</h4>
+        
+                <div class="form-group">
+                    <h3>Say "Take My Selfie!"</h3>
+                    <label>Your voice output : </label>
+                    <textarea class="form-control card-body" id="textbox" readonly="true"></textarea>
+                </div>
+        
+                <button class="btn btn-primary" onclick="start()" style="border: 0px;">Start <span class="badge badge-light" id="count">0</span></button>
+                <br>
+                <br>
+        
+            </div>
+            <div class="card-footer">
+                <div class="alert alert-info alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    Say "Take My Selfie"
+                </div>
+            <br>
+             
+            
+
+                        <label>Your webcam : </label>
+            
+                        <div id="camera"></div>
+                
+                        <br>
+                
+                        <label>Your selife Will Display Here: </label>
+                
+                        <div id="result"></div>
+                
+
+            
+                    
+            </div>
+          </div>
+
+
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
